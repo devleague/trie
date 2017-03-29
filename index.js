@@ -1,17 +1,14 @@
 /**
- * Create a Class Trie
- * that can work with a trie data structure
- *
- * Instance Methods
- *
- * add
- * @param word  string
- * @returns void
- *
- * exists
- * @param word  string
- * @returns boolean
- *          true if the word exists in the trie, else false
- *
+ * Sample using the Trie Class
  */
 
+const Trie = require('./lib/Trie');
+
+let trie = new Trie();
+
+trie.add('cat');
+trie.add('dog');
+
+console.log('"cat" exists?', trie.exists('cat'));
+console.log('"dog" exists?', trie.exists('dog'));
+console.log('"mouse" exists?', trie.exists('mouse'));
