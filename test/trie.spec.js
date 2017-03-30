@@ -1,10 +1,16 @@
 const chai = require('chai');
-const { expect } = chai;
+const { expect, assert } = chai;
+
 chai.should();
 
 const Trie = require('../lib/Trie');
 
 describe( 'Class: Trie', () => {
+  describe('should exist', () => {
+    it( 'should be defined', () => {
+      assert.typeOf(Trie, 'function', 'Trie should be a class.');
+    });
+  });
 
   describe( '"add" and "exists" behavior', () => {
 
@@ -91,8 +97,5 @@ describe( 'Class: Trie', () => {
       trie.exists('   ').should.be.false;
 
     });
-
-
   });
-
 });
