@@ -2,9 +2,9 @@
   "name": "trie-exercise",
   "version": "1.0.0",
   "description": "Trie Data Structure Exercise",
-  "main": "index.js",
+  "main": "lib/trie.js",
   "scripts": {
-    "test": "mocha --watch"
+    "test": "mocha --watch --bail"
   },
   "repository": {
     "type": "git",
