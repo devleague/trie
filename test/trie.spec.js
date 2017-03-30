@@ -1,19 +1,17 @@
 const chai = require('chai');
-const { expect, assert } = chai;
-
-chai.should();
-
 const Trie = require('../lib/Trie');
 
+const { expect, assert } = chai;
+chai.should();
+
 describe( 'Class: Trie', () => {
-  describe('should exist', () => {
+  describe( 'should exist', () => {
     it( 'should be defined', () => {
       assert.typeOf(Trie, 'function', 'Trie should be a class.');
     });
   });
 
   describe( '"add" and "exists" behavior', () => {
-
     let trie;
 
     beforeEach(() => {
@@ -72,6 +70,7 @@ describe( 'Class: Trie', () => {
       for (let i = 0, len = 100; i < len; i++) {
         trie.add('cat');
       }
+
       let snapshot2 = JSON.stringify(trie);
 
       snapshot1.should.be.equal(snapshot2);
@@ -95,7 +94,6 @@ describe( 'Class: Trie', () => {
 
       trie.exists(' ').should.be.true;
       trie.exists('   ').should.be.false;
-
     });
   });
 });
