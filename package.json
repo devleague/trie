@@ -4,7 +4,7 @@
   "description": "Trie Data Structure Exercise",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --watch"
+    "test": "mocha --watch --bail"
   },
   "repository": {
     "type": "git",
