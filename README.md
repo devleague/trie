@@ -14,6 +14,8 @@ Do your work in the `lib/Trie.js` file and follow the instructions in the commen
 
 ### So whats a trie?
 
+> pronouces "trie" as in `reTRIEve`
+
 Trie, a.k.a. a digital tree, is a search tree in which we can store data in a tree-like structure. In the case of this exercise, nodes (letters) will chain upon each other to build out a word. The last node of a word is called a leaf, signifying the end of a valid word.
 
 For example, the word, `cat`, `catch`, and `car`.
